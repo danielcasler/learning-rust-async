@@ -1,0 +1,22 @@
+[package]
+edition = "2021"
+name = "wickedspeech"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "app"
+path = "src/bin/app.rs"
+
+[dependencies]
+async-trait = "0.1.52"
+clap = {version = "3.0.4", features = ["derive"]}
+color-eyre = "0.5.11"
+crossbeam = "0.8"
+eyre = "0.6.5"
+serde_json = "1"
+tokio = {version = "1", features = ["full"]}
+tracing = "0.1"
+tracing-appender = "0.2"
+tracing-subscriber = "0.3"
